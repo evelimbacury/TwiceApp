@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/folha-de-estilo-do-twice-app.css">
+
+    <title>Álbum Page Two</title>
+</head>
+<body>
+    <!--Menu do site-->
+    <header class="menu">
+        <!--Definindo a logo-->
+
+        <section class="logo">
+            <img src="./assets/imagens/logo-twice-app-page-two.png" alt="Imagem da logo 'Twice App'">
+            <h2 class="textoDaLogo">TWICE APP</h1>
+        </section>
+        
+        <!--Definindo o perfil-->
+        <section class="perfil">
+            <span class="user">@yeojaminey</span>
+            <img src="./assets/imagens/icon-sana.jpg" alt="Imagem do perfl">
+        </section>
+    </header>
+
+    <!--Area de conteúdo da página-->
+    <main class="conteudoDaPagina">
+        <!--Os conteúdos principais do site-->
+
+            <section class="tituloDoAlbum">
+            <img src="./assets/imagens/page-two-logo2.png" alt="">
+            </section>
+            <nav class="menuDeNavegacao">
+                <ul>
+                    <li><a href="https://youtu.be/c7rCyll5AeY" target="_blank">• MV •</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PL5IK6E_XM1PvnN6tEseDGYnB3rkO2qg7W" target="_blank">• STAGES •</a></li>
+                    <li><a href="#tracklist" target="_blank">• TRACKLIST •</a></li>
+                    <li><a href="#photoshootDoAlbum" target="_blank">• PHOTOSHOOT •</a></li>
+                </ul>
+            </nav>
+            
+            <!--Cheer Up MV - vídeo do youtube-->
+            <section class="videoDoMv">
+                <h2 class="tituloMV">• <span>Cheer Up</span> •</h2>
+                <video class="cheerUpMv" controls poster="./assets/imagens/capa-mv-cheer-up.jpg">
+                    <source src="./assets/videos/CHEER-UP-MV.mp4" type="video/mp4">
+                    <source src="assets/videos/CHEER-UP-MV.webm" type="video/webm">
+                    <source src="./assets/videos/CHEER-UP-MV.ogg" type="video/ogg">
+                    <object>
+                      <embed src="CHEER-UP-MV.mp4" type="application/x-shockwave-flash" 
+                      allowfullscreen="false" allowscriptaccess="always">  		
+                    </object>
+                    Formato não suportado  
+                </video>   
+                <span class="dataLancamento">Lançamento: 24/04/2016</span>  
+            </section>
+            <!--Stage twice-->
+            <section class="stagesTwice">
+                <h3>Stages</h3>
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked>
+                        <label for="slide1"></label>
+                        <img src="/assets/imagens/stage1.jpg" alt="stage1">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide">
+                        <label for="slide2"></label>
+                        <img src="/assets/imagens/stage2.jpg" alt="stage2">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide">
+                        <label for="slide3"></label>
+                        <img src="/assets/imagens/stage3.jpg" alt="stage3">
+                    </li>
+                </ul>
+            </section>
+            <!--Tracklist do Album-->
+            <section id="tracklist" class="tracklist">
+                <div class="listaTracklist">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFD700" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        Tracklist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFD700" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </h3>
+                    <ol>
+                        <li>
+                            <a href="#cheerUpLetra" id="titleDoAlbum">Cheer Up</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="RGB(255,95,162)" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                            </svg>
+
+                            <div id="cheerUpLetra" class="modal">
+                                <div>
+                                    <a href="#fechar" title="fechar" class="fechar">x</a>
+                                    <h2>01/Cheer Up</h2>
+                                    <span>Lyrics by <b>Sam Lewis</b> • Composed by <b>alguem</b> • Arranged by <b>alguem</b> • Sessieon All instruments by <b>alguem</b> • Computer programming by <b>alguem</b> • Background vocals by <b>jihyo at TWICE</b> • Recorded by <b>alguem "goodear", alguem at JYPE Studios</b> • Recording assisted by <b>alguem at JYPE Studios</b> • Mixed by <b>alguem at JYPE Studios</b> • Mixing assisted by <b>alguem at JYPE Studios</b></span>
+                                    <section>
+                                        <p>매일 울리는 벨, 벨, 벨 <br>
+                                            이젠 나를 배려 해줘 <br>
+                                            배터리 낭비하긴 싫어 <br>
+                                            자꾸만 봐, 자꾸, 자꾸만 와 <br>
+                                            전화가 펑 터질 것만 같아 <br>
+                                            몰라, 몰라 숨도 못 쉰대 <br>
+                                            나 때문에 힘들어 (쿵) <br>
+                                            심장이 떨어진대 <br>
+                                            왜 걔 말은 나 너무 예쁘대? <br>
+                                            자랑 하는 건 아니구 <br>
+                                            아, 아까는 못 받아서 미안해 (우) <br>
+                                            친구를 만나느라, shy, shy, shy (shy) <br>
+                                            만나긴 좀 그렇구, 미안해 (우) <br>
+                                            좀 있다 연락할 게 later <br>
+                                            조르지 마, 얼마 가지 않아 <br>
+                                            부르게 해줄게, baby <br>
+                                            아직은 좀 일러, 내 맘 갖긴 일러 <br>
+                                            하지만 더 보여줄래 <br>
+                                            Cheer up, baby <br>
+                                            Cheer up, baby, 좀 더 힘을 내 <br>
+                                            여자가 쉽게 맘을 주면 안 돼 <br>
+                                            그래야 네가 날 더 좋아하게 될걸 <br>
+                                            태연하게 연기할래 아무렇지 않게 <br>
+                                            내가 널 좋아하는 맘 모르게 <br>
+                                            Just get it together <br>
+                                            And then baby, cheer up (I need you) <br>
+                                            아, 답장을 못 해줘서 미안해 (우) <br>
+                                            친구를 만나느라, shy, shy, shy (shy) <br>
+                                            만나긴 좀 그렇구, 미안해 (우) <br>
+                                            좀 있다 연락할 게 later <br>
+                                            조르지 마, 어디 가지 않아 <br>
+                                            되어줄 게 너의, baby <br>
+                                            너무 빨린 싫어, 성의를 더 보여 <br>
+                                            내가 널 기다려줄 게 <br>
+                                            
+                                            </p>
+                                            <p>
+                                            안절부절 목소리가 여기까지 들려 <br>
+                                            땀에 젖은 전화기가 여기서도 보여 <br>
+                                            바로바로 대답하는 것도 매력 없어 <br>
+                                            메시지만 읽고 확인 안 하는 건 기본 <br>
+                                            (오오오) 너무 심했나, boy <br>
+                                            이러다가 지칠까 봐 걱정되긴 하고 <br>
+                                            (오오오) 안 그러면, 내가 더 <br>
+                                            빠질 것만 같어, 빠질 것만 같어 <br>
+                                            Cheer up, baby <br>
+                                            Cheer up, baby, 좀 더 힘을 내 <br>
+                                            여자가 쉽게 맘을 주면 안 돼 <br>
+                                            그래야 네가 날 더 좋아하게 될걸 <br>
+                                            태연하게 연기할래 아무렇지 않게 <br>
+                                            내가 널 좋아하는 맘 모르게 <br>
+                                            Just get it together <br>
+                                            And then baby, cheer up <br>
+                                            나도 네가 좋아, 상처 입을까 봐 <br>
+                                            걱정되지만, 여자니까 이해해주길 <br>
+                                            속마음 들킬까 봐 겁이 나 <br>
+                                            지금처럼 조금만 더 다가와 <br>
+                                            그리 오래 걸리진 않아 <br>
+                                            Just get it together <br>
+                                            And then baby, cheer up <br>
+                                            Be a man (yeah) a real man (yeah) <br>
+                                            Gotta see you love me like a real man (oh, oh) <br>
+                                            Be a man (yeah) a real man (yeah) <br>
+                                            Gotta see you love me like a real man <br>
+                                            Cheer up, baby (oh) <br>
+                                            Cheer up, baby, 좀 더 힘을 내 <br>
+                                            여자가 쉽게 맘을 주면 안 돼 <br>
+                                            그래야 네가 날 더 좋아하게 될걸 <br>
+                                            태연하게 연기할래 아무렇지 않게 <br>
+                                            내가 널 좋아하는 맘 모르게 <br>
+                                            Just get it together <br>
+                                            And then baby, cheer up
+                                            </p>
+                                        </section>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Precious Love</a></li>
+                        <li><a href="#">Touchdown</a></li>
+                        <li><a href="#">Tuk Tok</a></li>
+                        <li><a href="#">Woohoo</a></li>
+                        <li><a href="#">My Headphones On</a></li>
+                        <li><a href="#">I'm Gonna Be A Star* (Bonus Track)</a></li>
+                    </ol>
+                </div>
+                <img src="./assets/imagens/twice-cheer-up-ot6.png" alt="Imagem de todas as membros do Twice">
+            </section>
+            <!--Photoshoot do album versão Side B-->
+            <div id="photoshootDoAlbum" class="photoshootDoAlbum">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFD700" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    Photoshoot
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFD700" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                </h3> 
+                <!--Nayeon, Jeongyeong e Momo-->
+                <section class="unnieLine">
+                    <div class="photoshoot Nayeon">
+                        <img src="./assets/imagens/twice-cheer-up-nayeon.png" alt="Photoshoot da Nayeon">
+                    </div>
+                    <div class="photoshoot Jeongyeon">
+                        <img src="./assets/imagens/twice-cheer-up-jeongyeon.png" alt="Photoshoot da Jeongyeong">
+                    </div>
+                    <div class="photoshoot Momo">
+                        <img src="./assets/imagens/twice-cheer-up-momo.png" alt="Photoshoot da Momo">
+                    </div>
+                </section>
+                <!--Sana, Jihyo e Mina-->
+                <section class="middleLine">
+                    <div class="photoshoot Sana">
+                        <img src="./assets/imagens/twice-cheer-up-sana.png" alt="Photoshoot da Sana">
+                    </div>
+                    <div class="photoshoot Jihyo">
+                        <img src="./assets/imagens/twice-cheer-up-jihyo.png" alt="Photoshoot da Jihyo">
+                    </div>
+                    <div class="photoshoot Mina">
+                        <img src="./assets/imagens/twice-cheer-up-mina.png" alt="Photoshoot da Mina">
+                    </div>
+                </section>
+                <!--Dahyun, Chaeyoung e Tzuyu-->
+                <section class="maknaeLine">
+                    <div class="photoshoot Dahyun">
+                        <img src="./assets/imagens/twice-cheer-up-dahyun.png" alt="Photoshoot da Dahyun">
+                    </div>
+                    <div class="photoshoot Chaeyoung">
+                        <img src="./assets/imagens/twice-cheer-up-chaeyoung.png" alt="Photoshoot da Chaeyoung">
+                    </div>
+                    <div class="photoshoot Tzuyu">
+                        <img src="./assets/imagens/twice-cheer-up-tzuyu.png" alt="Photoshoot da Tzuyu">
+                    </div>
+                </section>
+            </div>
+            <!--Rodapé do Page Two-->
+            <footer>
+                    <form action="#">
+                        <label for="usuario">Usuário:</label><input type="text" name="usuario" id="usuario" placeholder="insira seu usuario">
+                        <label for="senha">Senha:</label><input type="password" name="senha" id="senha" placeholder="insira sua senha"> 
+                        <button type="submit">Entrar</button>
+                    </form>
+            </footer>
+    </main>
+    <script src="/assets/js/javascript-twice-app.js"></script>
+</body>
+</html>
