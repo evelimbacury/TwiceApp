@@ -9,50 +9,115 @@ do corpo da pagina será de 100%*/
 html,body{
     height: 100%;
     width: 100%;
-    font-family: 'Secular One', sans-serif;
     font-size: 16px;
     margin: 0;
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*MENU TWICE APP*/
 /*Aplicando o design do menu*/
+.containerMenu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .menu{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    height: auto;
+    width: 87%;
+    height: 3em;
     margin: 3px 0;
     align-items: center;
+    border-radius: 80px;
     background-color: #fafafa;
 }
-.logo{
+.temas{
+    width: 12%;
+    color: black;
+    margin: 0 10px;
+}
+.temas ul{
+    list-style:none;
+}
+.temas li{
+    position:relative;
+    float:left;
+}
+.temas li  ul{
+    position:absolute;
+    top:45px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+.temas li:hover ul, .temas li.over ul{
+    display:flex; 
+    flex-wrap: wrap;
+}
+.temas li ul li{
+    display: flex;
+    width:200px;
+}
+.circulo{
+    width: 40px;
+    height: 40px;
+}
+.azul{color: #6791DB;}
+.vermelho{color: #C70024;}
+.rosa{color: #FF8FBE;}
+.laranja{color: #FFD492;}
+.bemvindo{
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerLogo{
     display: flex;
     justify-content: flex-start;
     width: auto;
-    color: #7adbd4;
+    height: 1.7em;
     margin-left: 10px;
 }
-.logo img{
-    width: 45px;
-    height: 45px;
+.logo{
+    width: 30px;
+    height: 30px;
+    color:#7adbd4;
 }
-.textoDaLogo{
-    font-size: 14px;
+.textoDa{
     padding: 0 5px;
     align-self: center;
+    font-family: 'Secular One', sans-serif;
+    color: #6791DB;
+}
+.Logo1{
+    font-size: 20px;
+}
+.Logo2{
+    font-size: 40px;
 }
 .títuloDaPagina{
     display: flex;
     justify-content: center;
     color: #7adbd4;
 }
+.linkMenu a{
+    margin: 0;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: grey;
+}
+.linkMenu a:hover{
+    background-color: #69ccd2;
+    color: #fafafa;
+    transition: 0.5s; 
+}
 .perfil{
     display: flex;
     justify-content: flex-end;
     width: auto;
     color: #7adbd4;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .perfil img{
     width: 40px;
@@ -63,11 +128,136 @@ html,body{
     padding: 0 15px;
     align-self: center;
 }
+.menus{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*CORPO DO SITE TWICE APP*/
-.conteudoDaPagina{
-    height: 100%;
+
+footer{
+    height: 11em;
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    background: linear-gradient(90deg, #ca485c, #e16b5c, #f39060, #ffb56b);
+}
+footer a{
+    text-decoration: none;
+    color: #6c56a1;
+    font-weight: bold;
+}
+
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+.canaisOficiais{
+    padding: 40px;
+}
+.canaisOficiais h4{
+    margin-bottom: 10px;
+}
+.canaisOficiais a{
+    margin: 0 7px;
+
+}
+footer p {
     width: 100%;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(29, 29, 29);
+    color: #fafafa;
+}
+footer span{
+    color: dodgerblue;
+    font-weight: bold;
+}
+/*Página Inicial*/
+.container1{
+    height: 650px;
+    /*background-image: url(https://lv2-cdn.azureedge.net/twice/049052d9d6be44368e5df5b7875d17c0-PC%20%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1.jpg);*/
+    background-image: url(../imagens/twice-wallpaper.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fafafa;
+}
+.overlay{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+}
+.container1 button{
+    background-color: rgb(12, 12, 12);
+    color: #fafafa;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+} 
+.container2{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barraDePesquisa{
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.desenvolvedores{
+    height: 27em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+.desenvolvedores h2{
+    margin: 30px 0;
+    font-size: 20px;
+}
+.desenvolvedores div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.dev{
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding: 20px;
+    
+}
+.dev img{
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.dev p{
+    font-size: 12px;
+    margin: 15px 0;
+}
+.dev h3{
+    color: #69ccd2;
+}
+.dev h4{
+    color: #6c56a1;
 }
 .tituloDoAlbum{
     width: 100%;
@@ -85,13 +275,20 @@ html,body{
     margin-left: auto;
     margin-right: auto;
 }
+.menuDeNavegacao{
+    display: flex;
+    margin: 10px 0;
+    width: 70%;
+    font-family: 'Secular One', sans-serif;
+}
 .menuDeNavegacao ul{
     display: flex;
-    background-color: #7adbd4;
+    background-color: #6791DB;
     height: 45px;
     width: 100%;
     justify-content:center;
     flex-wrap: wrap;
+    border-radius: 40px;
 }
 .menuDeNavegacao ul li{
     display: inline;
@@ -103,7 +300,9 @@ html,body{
   color: white;
 }
 .menuDeNavegacao ul li a:hover{
-    background-color: rgba(73, 73, 73, 0.13);
+    background-color: #fafafa;
+    color: #69ccd2;
+    transition: 0.4s;
 }
 /*Vídeo Mv*/
 .videoDoMv{
