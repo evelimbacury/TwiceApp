@@ -1,8 +1,9 @@
-#Twice APP
+# Twice APP
 Olá, seja bem-vindo ao Twice APP! 
 O site voltado ao grupo feminino de kpop TWICE.
+Aqui estão listados alguns arquivos que são ou foram necessários para o desenvolvimento desta página.
 
-Autores: Evelim Bacury (desenvolvedora) e Igor da Silva (designer)
+**Autores:** Evelim Bacury (desenvolvedora) e Igor da Silva (designer)
 
 ## Links Tracklist
 [Cheer Up](https://open.spotify.com/track/4CeE0LU1SkHshwHeMfPwqk?si=248fb680406b40d9)
