@@ -24,7 +24,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 87%;
+    width: 80%;
     height: 3em;
     margin: 3px 0;
     align-items: center;
@@ -32,9 +32,11 @@ html,body{
     background-color: #fafafa;
 }
 .temas{
-    width: 12%;
+    width: 13%;
     color: black;
     margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: 3px solid #6791DB;
 }
 .temas ul{
     list-style:none;
@@ -51,21 +53,38 @@ html,body{
     display:none;
 }
 .temas li:hover ul, .temas li.over ul{
-    display:flex; 
-    flex-wrap: wrap;
+    display:inline-flex;
+    width: 100px;
 }
 .temas li ul li{
-    display: flex;
-    width:200px;
+    padding: 5px;
+    width:50px;
+    height: auto;
+}
+.temas li ul li:hover{
+    background-color: rgba(0, 0, 0, 0.205);
 }
 .circulo{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
-.azul{color: #6791DB;}
-.vermelho{color: #C70024;}
-.rosa{color: #FF8FBE;}
-.laranja{color: #FFD492;}
+.azul{background-color: #6791DB;}
+.vermelho{background-color: #C70024;}
+.rosa{background-color: #FF8FBE;}
+.laranja{background-color: #FFD492;}
+.configuracoes{
+    background-color: #e4e1e1;
+    margin-right: 10px; 
+    padding: 7px; 
+    border: 1px solid #6791DB; 
+    border-radius: 30px;
+}
+.configuracoes:hover{
+    background-color: rgba(0, 0, 0, 0.226);
+    border: 2px solid #6791DB;
+    transition: 0.2s;
+}
 .bemvindo{
     margin-top: 13%;
     display: flex;
@@ -108,7 +127,7 @@ html,body{
     color: grey;
 }
 .linkMenu a:hover{
-    background-color: #69ccd2;
+    background-color: #6791DB;
     color: #fafafa;
     transition: 0.5s; 
 }
@@ -292,6 +311,7 @@ footer span{
 }
 .menuDeNavegacao ul li{
     display: inline;
+    border-right: 2px solid #fafafa;
 }
 .menuDeNavegacao ul li a{
   padding: 11px 10px;
@@ -301,7 +321,7 @@ footer span{
 }
 .menuDeNavegacao ul li a:hover{
     background-color: #fafafa;
-    color: #69ccd2;
+    color: #6791DB;
     transition: 0.4s;
 }
 /*Vídeo Mv*/
