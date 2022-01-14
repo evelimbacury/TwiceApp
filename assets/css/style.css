@@ -11,7 +11,12 @@ html,body{
     width: 100%;
     font-size: 16px;
     margin: 0;
+    color: #000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*font: 400 15px/1.8 "Lato", sans-serif;*/
+}
+body{
+    background-color:  rgba(128, 128, 128, 0.274);
 }
 /*Declarando as fontes externas que serão utilizadas*/
 @font-face {
@@ -93,6 +98,9 @@ html,body{
     border: 1px solid #6791DB; 
     border-radius: 50%;
 }
+.botaoMenu{
+    display: none;
+}
 .modo:hover, .menuDeNavegacao ul li a:hover{
     background-color: rgba(0, 0, 0, 0.11);
     transition: 0.2s;
@@ -135,21 +143,35 @@ html,body{
     border-right: 2px solid #fafafa;
 }
 .bemvindo{
-    margin-top: 13%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 10pt
+}
+.barraDePesquisa{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+    padding: 0 20px;
 }
 .containerVersao{
-    background-color: #fafafa;
+    /*cores*/
+    background-color: hsl(0, 0%, 98%);
     color: rgb(82, 82, 82);
-    font-size: 9px;
-    font-family: S;
-    padding: 3px 10px;
-    margin-top: 150px;
-    border-radius: 30px;
+    /*fonte*/
     font-weight: bold;
     font-family: 'Secular One', sans-serif;
+    font-size: 9px;
+    /*tamanho e arredondado*/
+    padding: 3px 10px;
+    border-radius: 30px;
+    /*posição*/
+    position: fixed;
+    bottom: 3%;
+    
 }
 #versao{
     color: #6791DB;
@@ -185,7 +207,6 @@ footer a{
 }
 .canaisOficiais a{
     margin: 0 7px;
-
 }
 footer p {
     width: 100%;
@@ -200,52 +221,135 @@ footer p {
     font-weight: bold;
 }
 /*Página Inicial*/
+main{
+    margin: auto;
+    width: 97%;
+    background-color: #fafafa;
+    border-right: 3px solid rgba(128, 128, 128, 0.274);
+}
 .container1{
-    height: 650px;
+    height: 550px;
     /*background-image: url(https://lv2-cdn.azureedge.net/twice/049052d9d6be44368e5df5b7875d17c0-PC%20%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1.jpg);*/
     background-image: url(../imagens/twice-wallpaper.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fafafa;
+    opacity: 0.85;
 }
 .overlay{
     width: 100%;
-    height: 650px;
+    height: 550px;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    background: rgba(0, 0, 0, 0.65);
+    /*background: rgba(0, 0, 0, 0.466);*/
+    /*background: rgba(112, 112, 112, 0.308);*/
 }
 .container1 button{
-    background-color: rgb(12, 12, 12);
+    /*background-color: rgb(12, 12, 12);*/
+    background-color: rgba(12, 12, 12, 0);
     color: #fafafa;
     width: 80px;
     height: 40px;
-    border: none;
+    border: 1px solid #fafafa;
     border-radius: 10px;
 } 
 .container2{
-    height: 500px;
+    width: 100%;
+    height: 600px;
     display: flex;
-    justify-content: center;
+    padding-top: 40px;
+    align-items: flex-end;
+    flex-direction: column;
+    border-top: 1px solid rgba(128, 128, 128, 0.274);
+    border-bottom: 8px solid rgba(128, 128, 128, 0.274);
+}
+.container2 p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.container2 .containerQuot{
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: rgb(63, 63, 63);
+    width: 35%;
+    margin-right: 10%;
+}
+.containerQuot blockquote{
+    margin: 20px 40px 20px 0;
+    width: 100%;
+}
+.container2 blockquote span{
+    font-size: 60pt;
+}
+.containerFlutuante{
+    overflow: hidden;
+    /*declarando tamanho*/
+    height: 600px;
+    width: 40%;
+    /*declarando posição*/
+    position: absolute;
+    left: 10%;
+    top: 930px;
+    /*borda e sombra*/
+    border: 1px solid rgba(43, 43, 43, 0.411);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.103);
+}
+.containerFlutuante .carrossel{
+    width: 1880%;
+    animation-name: animacao;
+    animation-duration: 30s;
+    /*animation-duration: 54s;*/
+    animation-iteration-count: infinite;
+}
+.containerFlutuante .carrossel img{
+    height: 800px;
+}
+.container3{
+    width: 100%;
+    height: 400px;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    
 }
-.barraDePesquisa{
-    width: 350px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    margin: 20px 0;
-    padding: 0 20px;
-}
+.carroselDeAlbuns{
+    overflow: hidden;
+    border: 1px solid rgba(43, 43, 43, 0.014);
+    /*background-color: rgba(43, 43, 43, 0.103);*/
+    /*background: rgb(71,147,215);*/
+/*background: linear-gradient(90deg, rgba(71,147,215,1) 0%, rgba(73,157,205,1) 30%, rgba(0,251,255,1) 100%);
+*/
+    border-radius: 10px;
+    /*background-color: #6791DB;*/
+    width: 400px;
+    height:250px;
 
+}
+.carroselDeAlbuns .carrossel{
+    width: 1200%;
+    margin-top: 50px;
+    animation-name: animacaoAlbuns;
+    animation-duration: 40s;
+    /*animation-duration: 54s;*/
+    animation-iteration-count: infinite;
+}
+.carroselDeAlbuns .carrossel img{
+    height: 150px;
+}
 .desenvolvedores{
-    height: 27em;
+    height: 30em;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(241, 241, 241);
+    background-image: url(/assets/imagens/fundo-dev.png);
+    background-size: cover;
+    background-size: 280px;
+    background-position: 0px -180px;
+    /*background-color: rgb(241, 241, 241);*/
 }
 .desenvolvedores h2{
     margin: 30px 0;
@@ -257,12 +361,15 @@ footer p {
     margin-bottom: 40px;
 }
 .dev{
-    border: 1px solid grey;
-    border-radius: 20px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgba(43, 43, 43, 0.411);
+    /*box-shadow: 2px 2px rgba(0, 0, 0, 0.103);*/
+    box-shadow: 5px 5px#0ff;
+    border-radius: 4px;
     margin: 0 20px;
-    padding: 20px;
-    
+    padding: 40px 20px;
 }
+
 .dev img{
     height: 100px;
     border-radius: 100px;
@@ -521,6 +628,40 @@ footer p {
 }
 
 @media screen and (max-width: 700px){
+    /*Página Inicial*/
+    .logo{
+        margin-right: 0;
+    }
+    .temas ul{
+        display: none;
+    }
+    .botaoMenu{
+        display: flex;
+        margin-right: 10px; 
+        padding: 5px; 
+        border: 1px solid #6791DB; 
+        border-radius: 50%;
+    }
+    .menuDeNavegacao{
+        display: none;
+    }
+    .bemvindo, .barraDePesquisa{
+        font-size: 9pt;
+    }
+    .barraDePesquisa{
+        width: 250px;
+    }
+    .containerFlutuante{
+        width: 80%;
+    }
+    .container2 div{
+        display: none;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Page Two*/
     /*Retirar o user da tela*/
     .user{
         display: none;
@@ -568,4 +709,22 @@ footer p {
         color: black;
         background-color: #fff;
     }
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;   
+}
+[data-anime="above"]{
+    transform: translate3d(0, 50px, 0);
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }

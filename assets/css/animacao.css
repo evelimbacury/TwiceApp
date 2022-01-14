@@ -1,0 +1,57 @@
+@keyframes animacao {
+    /*Twice*/
+    0%{margin-left: -12%;}
+    6%{margin-left: -12%;}
+    /*Nayeon*/
+    10%{margin-left: -120%;}
+    16%{margin-left: -120%;}
+    /*Jeongyeon*/
+    20%{margin-left: -250%;}
+    26%{margin-left: -250%;}
+    /*Momo*/
+    30%{margin-left: -380%;}
+    36%{margin-left: -380%;}
+    /*Sana*/
+    40%{margin-left: -500%;}
+    46%{margin-left: -500%;}
+    /*Jihyo*/
+    50%{margin-left: -616%;}
+    56%{margin-left: -616%;}
+    /*Mina*/
+    60%{margin-left: -770%;}
+    66%{margin-left: -770%;}
+    /*Dahyun*/
+    70%{margin-left: -890%;}
+    76%{margin-left: -890%;}
+    /*Chaeyoung*/
+    80%{margin-left: -1010%;}
+    86%{margin-left: -1010%;}
+    /*Tzuyu*/
+    90%{margin-left: -1130%;}
+    96%{margin-left: -1130%;}
+    /*cópia Twice*/
+    100%{margin-left: -1262%;}
+}
+@keyframes animacaoAlbuns {
+    0%{margin-left: 0;}
+    /*cheer up e tt*/
+    10%{margin-left: -27%;}
+    /*kk e wit*/
+    20%{margin-left: -95%;}
+    /*signal e likey*/
+    30%{margin-left: -175%;}
+    /*mar e wil*/
+    40%{margin-left: -260%;}
+    /*dtna e dbz*/
+    50%{margin-left: -340%;}
+    /*yoy e year of yes*/
+    60%{margin-left: -405%;}
+    /*fancy e feel*/
+    70%{margin-left: -480%;}
+    /*&twice e m&m*/
+    80%{margin-left: -550%;}
+    /*ewo e taste of love*/
+    90%{margin-left: -650%;}
+    /*formula e doughnut*/
+    100%{margin-left: -853%;}
+}

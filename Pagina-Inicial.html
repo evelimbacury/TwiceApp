@@ -1,164 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Página Inicial</title>
-    <link rel="icon" type="imagem/png" href="./assets/imagens/logo-twice-app-page-two.png"/>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/folha-de-estilo-do-twice-app.css">
-</head>
-<body>
-    <section class="container1">
-        <!--div para deixar o fundo escuro-->
-        <div class="overlay">
-            <!--Conteiner para organizar os menus do site-->
-            <header class="menus">
-                <!--Menu principal-->
-                <div class="menu">
-                        <img class="logo" src="./assets/imagens/logo-twiceapp.svg" alt="Imagem da logo 'Twice App'">
-                        <h2 class="textoDaLogo">TWICE APP</h1>
-                    <div class="menu temas">
+        <title>Página Inicial</title>
+        <link rel="icon" type="imagem/png" href="./assets/imagens/logo-twice-app-page-two.png"/>
+        <!--Links Externos-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <!--Links de css local-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/animacao.css">
+    </head>
+    <body>
+        <section class="container1">
+            <!--div para deixar o fundo escuro-->
+            <div class="overlay">
+                <!--Conteiner para organizar os menus do site-->
+                <header class="menus">
+                    <!--Menu principal-->
+                    <div class="menu">
+                        <a href="Pagina-Inicial.html">
+                            <img class="logo" src="./assets/imagens/logo-twiceapp.svg" alt="Imagem da logo 'Twice App'">
+                        </a>
+                        <a href="Pagina-Inicial.html" style="text-decoration: none;">
+                            <h2 class="textoDaLogo">TWICE APP</h1>
+                        </a>
+                            
+                        <div class="menu temas">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img style="width: 23px; height: 23px;margin-right: 5px; background-color: #6791DB; padding: 7px; border-radius: 30px;" src="./assets/imagens/temas.png" alt="">
+                                    </a>
+                                    <ul>
+                                        <li><div class="circulo azul"></div></li>
+                                        <li><div class="circulo vermelho"></div></li>
+                                        <li><div class="circulo rosa"></div></li>
+                                        <li><div class="circulo laranja"></div></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#6791DB" class="modo" viewBox="0 0 16 16">
+                                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                                    </svg>
+                                </li>
+                            </ul>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#6791DB" class="botaoMenu" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <!--Menu de Navegação-->
+                    <nav class="menuDeNavegacao inicial">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <img style="width: 23px; height: 23px;margin-right: 5px; background-color: #6791DB; padding: 7px; border-radius: 30px;" src="./assets/imagens/temas.png" alt="">
-                                </a>
-                                <ul>
-                                    <li><div class="circulo azul"></div></li>
-                                    <li><div class="circulo vermelho"></div></li>
-                                    <li><div class="circulo rosa"></div></li>
-                                    <li><div class="circulo laranja"></div></li>
-                                </ul>
+                                <a href="#membros" target="_blank">MEMBROS</a>
+                            </li>
+                            <span class="miniBorda"></span>
+                            <li>
+                                <a href="https://youtu.be/c7rCyll5AeY" target="_blank">MVs</a>
+                            </li>
+                            <span class="miniBorda"></span>
+                            <li>
+                                <a href="#tracklist" target="_blank">DISCOGRAFIA</a>
+                            </li>
+                            <span class="miniBorda"></span>
+                            <li>
+                                <a href="https://youtube.com/playlist?list=PL5IK6E_XM1PvnN6tEseDGYnB3rkO2qg7W" target="_blank">STAGES</a>
+                            </li>
+                            <span class="miniBorda"></span>
+                            <li>
+                                <a href="#photoshootDoAlbum" target="_blank">PHOTOSHOOT</a>
                             </li>
                         </ul>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#6791DB" class="modo" viewBox="0 0 16 16">
-                                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                            </svg>
-                        </a>
+                    </nav>
+                </header>
+                <!--conteiner para organizar o testo de bem-vindo-->
+                <div class="bemvindo">
+                    <h1>Bem-vindo(a) ao <span class="textoDaLogo" style="font-size: 40px;">TWICE APP</span>!</h1>
+                    <p>Encontre seu album favorito do Twice aqui!</p>
+                    <input class="barraDePesquisa" type="text" placeholder="Pesquise músicas, albuns, photoshoots e mais!">
+                    <button type="button">Vamos lá!</button>
+                </div>
+                <div class="containerVersao">Versão: <span id="versao">Study About Love</span></div>
+            </div>
+        </section>
+        <!--Seção de conteúdos que o site/app oferece-->
+        <main>
+            <section class="container3">
+                <div data-anime="left" style="display: flex; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;" width="40" height="40" fill="currentColor" class="bi bi-disc" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    <div  style="margin-right: -50px; border-left: 2px solid gray; padding: 10px;">
+                        <h3>Álbuns, singles, e mais</h3>
+                        <p>Tudo sobre o twice aqui.</p>
                     </div>
                 </div>
-                <!--Menu de Navegação-->
-                <nav class="menuDeNavegacao inicial">
-                    <ul>
-                        <li>
-                            <a href="#membros" target="_blank">MEMBROS</a>
-                        </li>
-                        <span class="miniBorda"></span>
-                        <li>
-                            <a href="https://youtu.be/c7rCyll5AeY" target="_blank">MVs</a>
-                        </li>
-                        <span class="miniBorda"></span>
-                        <li>
-                            <a href="#tracklist" target="_blank">DISCOGRAFIA</a>
-                        </li>
-                        <span class="miniBorda"></span>
-                        <li>
-                            <a href="https://youtube.com/playlist?list=PL5IK6E_XM1PvnN6tEseDGYnB3rkO2qg7W" target="_blank">STAGES</a>
-                        </li>
-                        <span class="miniBorda"></span>
-                        <li>
-                            <a href="#photoshootDoAlbum" target="_blank">PHOTOSHOOT</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <!--conteiner para organizar o testo de bem-vindo-->
-            <div class="bemvindo">
-                <h1>Bem-vindo(a) ao <span class="textoDaLogo" style="font-size: 40px;">TWICE APP</span>!</h1>
-                <p>Encontre seu album favorito do Twice aqui!</p>
-                <input class="barraDePesquisa" type="text" placeholder="Pesquise músicas, albuns, photoshoots e mais!">
-                <button type="button">Vamos lá!</button>
+                <div class="carroselDeAlbuns">
+                    <div data-anime="right" class="carrossel">
+                        <img src="/assets/imagens/carrosseis/albuns/album1-the story begins.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album2-page-two.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album3-Twicecoaster-Lane1.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album4-Twicecoaster-Lane2.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album5-what-is-twice.jpeg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album6-signal.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album8-twicetagram.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album9-twicetagram-repack-marry-and-happy.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album10-what-is-love.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album11-summer-nights.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album12-DBZ.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album13-yes-or-yes.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album14-the year of yes.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album16-fancy-you.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album17-feel-special.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album18-&twice.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album19-more-&-more.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album21-eyes wide open.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album22-taste-of-love.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album23-perfect-world.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album24-formula-of-love.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album25-doughnut.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album1-the story begins.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album2-page-two.jpg" alt="">
+                        <img src="/assets/imagens/carrosseis/albuns/album3-Twicecoaster-Lane1.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <div data-anime="left" class="containerFlutuante">
+                <div class="carrossel">
+                    <img id="twice" src="/assets/imagens/carrosseis/PaginaInicial/imagem10.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem1.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem2.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem3.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem4.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem5.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem6.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem7.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem8.jpg" alt="">
+                    <img src="/assets/imagens/carrosseis/PaginaInicial/imagem9.jpg" alt="">
+                    <img id="twice" src="/assets/imagens/carrosseis/PaginaInicial/imagem10.jpg" alt="">
+                </div>
             </div>
-            <div class="containerVersao">Versão: <span id="versao">Study About Love</span></div>
-        </div>
-    </section>
-
-    <!--Seção de conteúdos que o site/app oferece-->
-    <section>
-        <div class="container2">
-            <div class="circulo"></div>
-            <p></p>
-        </div>
-    </section>
-
-    <!--Seção de Desenvolvedores do site :D-->
-    <aside class="desenvolvedores">
-        <h2>Quem Somos</h2>
-        <section>
-            <!--Web designer-->
-            <div class="dev" id="evelim">
-                <img src="./assets/imagens/evelim.jpeg" alt="dev evelim">
-                <h3>Evelim Bacury</h3>
-                <h4>Web Developer</h4>
-                <p>Buddy e estudante de web designer, <br>fazendo curso e só.</p>
-                <a href="https://twitter.com/bluerisess">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            <section data-anime="above" class="container2">
+                <div style="height: 110px; width: 300px; border-left: 2px solid gray; padding: 40px; margin-right: 5%; margin-bottom: 10%;" >
+                    <h3 style="margin-bottom: 10px;">Quem é Twice?!</h3>
+                    <p>Twice (Hangul: 트와이스; estilizado como TWICE) é um girl group 
+                        sul-coreano formado pela JYP Entertainment através do reality 
+                        show de 2015 'Sixteen'.
+                    </p> 
+                    <p>
+                        O grupo é composto por nove membros: 
+                        Nayeon, Jeongyeon, Momo, Sana, Jihyo, 
+                        Mina, Dahyun, Chaeyoung e Tzuyu.
+                    </p> 
+                </div>
+                <div class="containerQuot">
+                    <svg style="margin-left: 30px;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
                     </svg>
-                </a>
-                <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-            </div>
-            <!--Designer-->
-            <div class="dev" id="igor">
-                <img src="./assets/imagens/igor.jpeg" alt="dev igor">
-                <h3>Igor da Silva</h3>
-                <h4>Designer</h4>
-                <p>Designer da Once Brasil e Update Boo, <br>reconhecido até pela Momo.</p>
-                <a href="https://twitter.com/misakiraimo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                </a>
-            </div>
+                    <blockquote>
+                        <div style="margin-left: 20%;">
+                            One in a Million! <br>안녕, Twice임니다!
+                            <p style="text-align:right; font-size: 12pt; margin: 20px; font-family: monospace;">–TWICE.</p>
+                        </div>
+                        <div style="margin-left: 90px; margin-top: 30px; font-size: 6pt;">
+                            <p>Tradução: Um em um Milhão! Olá, nós somos o Twice!</p>
+                        </div>
+                    </blockquote>
+                    
+                </div>
+            </section>
+        </main>
+        <!--Seção de Desenvolvedores do site :D-->
+        <section class="desenvolvedores">
+            <h2>Sobre Nós</h2>
+            <section>
+                <!--Web designer-->
+                <div class="dev" id="evelim">
+                    <img src="./assets/imagens/evelim.jpeg" alt="dev evelim">
+                    <h3>Evelim Bacury</h3>
+                    <h4>Web Developer</h4>
+                    <p>Buddy e estudante de web designer, <br>fazendo curso e só.</p>
+                    <a href="https://twitter.com/bluerisess">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <!--Designer-->
+                <div class="dev" id="igor">
+                    <img src="./assets/imagens/igor.jpeg" alt="dev igor">
+                    <h3>Igor da Silva</h3>
+                    <h4>Designer</h4>
+                    <p>Designer da Once Brasil e Update Boo, <br>reconhecido até pela Momo.</p>
+                    <a href="https://twitter.com/misakiraimo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6c56a1" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
         </section>
-    </aside>
-    <footer>
-        <section class="containerFooter">
-            <div>
-                <img class="logo" style="margin: 0;" src="./assets/imagens/logo-twiceapp.svg" alt="Imagem da logo 'Twice App'">
-                <h2 class="textoDaLogo">TWICE APP</h1>
-            </div>
-            <div class="canaisOficiais">
-                <h4>Canais oficiais do Twice</h4>
-                <!--Youtube-->
-                <a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-youtube" viewBox="0 0 16 16">
-                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                    </svg>
-                </a>
-                <!--Twitter-->
-                <a href="https://twitter.com/jypetwice">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                </a>
-                <!--Facebook-->
-                <a href="https://www.facebook.com/JYPETWICE/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                    </svg>
-                </a>
-                <!--Instagram-->
-                <a href="https://www.instagram.com/twicetagram/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                    </svg>
-                </a> <br>
-                <a href="https://twice.jype.com/">TWICE'page</a>
-                <a href="https://fans.jype.com/Portal">Fan's</a>
-            </div>
-            <p>Copyright © <span id="jyp">JYP</span> ENTERTAINMENT Co., Ltd. All rights reserved.</p>
-        </section>
-    </footer>
-</body>
+        <footer>
+            <section class="containerFooter">
+                <div>
+                    <img class="logo" style="margin: 0;" src="./assets/imagens/logo-twiceapp.svg" alt="Imagem da logo 'Twice App'">
+                    <h2 class="textoDaLogo">TWICE APP</h1>
+                </div>
+                <div class="canaisOficiais">
+                    <h4>Canais oficiais do Twice</h4>
+                    <!--Youtube-->
+                    <a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                    </a>
+                    <!--Twitter-->
+                    <a href="https://twitter.com/jypetwice">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <!--Facebook-->
+                    <a href="https://www.facebook.com/JYPETWICE/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/twicetagram/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ca485c" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a> <br>
+                    <a href="https://twice.jype.com/">TWICE'page</a>
+                    <a href="https://fans.jype.com/Portal">Fan's</a>
+                </div>
+                <p>Copyright © <span id="jyp">JYP</span> ENTERTAINMENT Co., Ltd. All rights reserved.</p>
+            </section>
+        </footer>
+        <script type="text/javascript" src="/assets/js/script.js"></script>
+    </body>
+    
 </html>
