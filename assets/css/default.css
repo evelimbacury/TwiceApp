@@ -1,1 +1,220 @@
 /*CSS para configurar  o header, corpo pricipal e footer*/
+.container1{
+    height: 550px;
+    /*background-image: url(https://lv2-cdn.azureedge.net/twice/049052d9d6be44368e5df5b7875d17c0-PC%20%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1.jpg);*/
+    background-image: url(../imagens/twice-wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fafafa;
+    opacity: 0.85;
+}
+.overlay{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.466);
+    /*background: rgba(112, 112, 112, 0.308);*/
+}
+.container1 button{
+    /*background-color: rgb(12, 12, 12);*/
+    background-color: rgba(12, 12, 12, 0);
+    color: #fafafa;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #fafafa;
+    border-radius: 10px;
+}
+.menus{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 3em;
+    margin: 3px 0;
+    align-items: center;
+    border-radius: 80px;
+    background-color: #fafafa;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    color:#7adbd4;
+}
+.textoDaLogo{
+    padding: 0 5px;
+    align-self: center;
+    font-family: 'Secular One', sans-serif;
+    color: #6791DB;
+    font-size: 20px;
+}
+.temas{
+    width: auto;
+    height: 40px;
+}
+.temas ul{
+    list-style:none;
+}
+.temas li{
+    position:relative;
+    float:left;
+}
+.temas li  ul{
+    position:absolute;
+    top:45px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+.temas li:hover ul, .temas li.over ul{
+    display:inline-flex;
+    width: 100px;
+}
+.temas li ul li{
+    padding: 5px;
+    width:50px;
+    height: auto;
+}
+.temas li ul li:hover{
+    background-color: rgba(0, 0, 0, 0.205);
+}
+.modo{
+    /*background-color: #e4e1e1;*/
+    margin-right: 10px; 
+    padding: 5px; 
+    border: 1px solid #6791DB; 
+    border-radius: 50%;
+}
+.modo:hover, .menuDeNavegacao ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    transition: 0.2s;
+}
+.botaoMenu{
+    display: none;
+}
+.menuDeNavegacao{
+    display: flex;
+    margin: 10px 0;
+    width: 500px;
+    font-family: 'Secular One', sans-serif;
+}
+.menuDeNavegacao ul{
+    display: flex;
+    background-color: #6791DB;
+    height: 45px;
+    width: 100%;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-radius: 40px;
+}
+.menuDeNavegacao ul li{
+    display: inline;
+}
+.miniBorda{
+    display: flex;
+    margin-top: 15px;
+    height: 13px;
+    border-right: 2px solid #fafafa;
+}
+.menuDeNavegacao ul li a{
+    padding: 11px 10px;
+    display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+.bemvindo{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10pt
+}
+.barraDePesquisa{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.containerVersao{
+    /*cores*/
+    background-color: hsl(0, 0%, 98%);
+    color: rgb(82, 82, 82);
+    /*fonte*/
+    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+    font-size: 9px;
+    /*tamanho e arredondado*/
+    padding: 3px 10px;
+    border-radius: 30px;
+    /*posição*/
+    position: fixed;
+    bottom: 3%;
+    
+}
+#versao{
+    color: #6791DB;
+    font-family: "Formula of Love";
+}
+/* Footer */
+footer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    background: linear-gradient(90deg, #ca485c, #e16b5c, #f39060, #ffb56b);
+}
+footer a{
+    text-decoration: none;
+    color: #6c56a1;
+    font-weight: bold;
+}
+
+.containerFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+.canaisOficiais{
+    width: 200px;
+}
+.canaisOficiais h4{
+    margin-bottom: 10px;
+}
+.canaisOficiais a{
+    margin: 0 7px;
+}
+.canaisOficiais img{
+    width: 25px;
+    height: 25px;
+}
+footer p {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(29, 29, 29);
+    color: #fafafa;
+}
+#jyp{
+    color: dodgerblue;
+    font-weight: bold;
+}

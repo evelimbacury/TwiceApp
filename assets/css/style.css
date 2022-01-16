@@ -10,7 +10,6 @@ html,body{
     height: 100%;
     width: 100%;
     font-size: 16px;
-    margin: 0;
     color: #000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /*font: 400 15px/1.8 "Lato", sans-serif;*/
@@ -18,244 +17,21 @@ html,body{
 body{
     background-color:  rgba(128, 128, 128, 0.274);
 }
-/*Declarando as fontes externas que serão utilizadas*/
-@font-face {
-    font-family: "Formula of Love";
-    src: url(../fontes/TWICE\ -\ Formula\ of\ Love\ 3.ttf);
-}
-/*MENU TWICE APP*/
-/*Aplicando o design do menu*/
-.menu{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 3em;
-    margin: 3px 0;
-    align-items: center;
-    border-radius: 80px;
-    background-color: #fafafa;
-}
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
-    margin-right: 50px;
-    width: 30px;
-    height: 30px;
-    color:#7adbd4;
-}
-.textoDaLogo{
-    padding: 0 5px;
-    align-self: center;
-    font-family: 'Secular One', sans-serif;
-    color: #6791DB;
-    font-size: 20px;
-}
-.temas{
-    width: auto;
-    height: 40px;
-}
-.temas ul{
-    list-style:none;
-}
-.temas li{
-    position:relative;
-    float:left;
-}
-.temas li  ul{
-    position:absolute;
-    top:45px;
-    left:0;
-    background-color:#fff;
-    display:none;
-}
-.temas li:hover ul, .temas li.over ul{
-    display:inline-flex;
-    width: 100px;
-}
-.temas li ul li{
-    padding: 5px;
-    width:50px;
-    height: auto;
-}
-.temas li ul li:hover{
-    background-color: rgba(0, 0, 0, 0.205);
-}
-.circulo{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
 .azul{background-color: #6791DB;}
 .vermelho{background-color: #C70024;}
 .rosa{background-color: #FF8FBE;}
 .laranja{background-color: #FFD492;}
-.modo{
-    /*background-color: #e4e1e1;*/
-    margin-right: 10px; 
-    padding: 5px; 
-    border: 1px solid #6791DB; 
-    border-radius: 50%;
-}
-.botaoMenu{
-    display: none;
-}
-.modo:hover, .menuDeNavegacao ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.11);
-    transition: 0.2s;
-}
-.menus{
-    width: 100%;
-    display: flex;
-    margin: 10px 0;
-    flex-direction: column;
-    align-items: center;
-}
-.menuDeNavegacao{
-    display: flex;
-    margin: 10px 0;
-    width: 500px;
-    font-family: 'Secular One', sans-serif;
-}
-.menuDeNavegacao ul{
-    display: flex;
-    background-color: #6791DB;
-    height: 45px;
-    width: 100%;
-    justify-content:center;
-    flex-wrap: wrap;
-    border-radius: 40px;
-}
-.menuDeNavegacao ul li{
-    display: inline;
-}
-.menuDeNavegacao ul li a{
-    padding: 11px 10px;
-    display: inline-block;
-  text-decoration: none;
-  color: white;
-}
-.miniBorda{
-    display: flex;
-    margin-top: 15px;
-    height: 13px;
-    border-right: 2px solid #fafafa;
-}
-.bemvindo{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10pt
-}
-.barraDePesquisa{
-    width: 300px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    margin: 20px 0;
-    padding: 0 20px;
-}
-.containerVersao{
-    /*cores*/
-    background-color: hsl(0, 0%, 98%);
-    color: rgb(82, 82, 82);
-    /*fonte*/
-    font-weight: bold;
-    font-family: 'Secular One', sans-serif;
-    font-size: 9px;
-    /*tamanho e arredondado*/
-    padding: 3px 10px;
-    border-radius: 30px;
-    /*posição*/
-    position: fixed;
-    bottom: 3%;
-    
-}
-#versao{
-    color: #6791DB;
-    font-family: "Formula of Love";
-}
+
+
 /*CORPO DO SITE TWICE APP*/
 
-footer{
-    height: 11em;
-    display: flex;
-    flex-direction: column;
-    color: #fafafa;
-    background: linear-gradient(90deg, #ca485c, #e16b5c, #f39060, #ffb56b);
-}
-footer a{
-    text-decoration: none;
-    color: #6c56a1;
-    font-weight: bold;
-}
 
-.containerFooter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
-}
-.canaisOficiais{
-    padding: 40px;
-}
-.canaisOficiais h4{
-    margin-bottom: 10px;
-}
-.canaisOficiais a{
-    margin: 0 7px;
-}
-footer p {
-    width: 100%;
-    font-size: 10px;
-    text-align: center;
-    padding: 5px 0;
-    background-color: rgb(29, 29, 29);
-    color: #fafafa;
-}
-#jyp{
-    color: dodgerblue;
-    font-weight: bold;
-}
 /*Página Inicial*/
 main{
     margin: auto;
     width: 97%;
     background-color: #fafafa;
     border-right: 3px solid rgba(128, 128, 128, 0.274);
-}
-.container1{
-    height: 550px;
-    /*background-image: url(https://lv2-cdn.azureedge.net/twice/049052d9d6be44368e5df5b7875d17c0-PC%20%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1.jpg);*/
-    background-image: url(../imagens/twice-wallpaper.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fafafa;
-    opacity: 0.85;
-}
-.overlay{
-    width: 100%;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    /*background: rgba(0, 0, 0, 0.466);*/
-    /*background: rgba(112, 112, 112, 0.308);*/
-}
-.container1 button{
-    /*background-color: rgb(12, 12, 12);*/
-    background-color: rgba(12, 12, 12, 0);
-    color: #fafafa;
-    width: 80px;
-    height: 40px;
-    border: 1px solid #fafafa;
-    border-radius: 10px;
 } 
 .container2{
     width: 100%;
@@ -314,7 +90,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 .carroselDeAlbuns{
     overflow: hidden;
@@ -345,11 +120,8 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url(/assets/imagens/fundo-dev.png);
-    background-size: cover;
-    background-size: 280px;
-    background-position: 0px -180px;
     /*background-color: rgb(241, 241, 241);*/
+    
 }
 .desenvolvedores h2{
     margin: 30px 0;
@@ -359,25 +131,34 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    
 }
 .dev{
-    background-color: rgb(241, 241, 241);
-    border: 1px solid rgba(43, 43, 43, 0.411);
-    /*box-shadow: 2px 2px rgba(0, 0, 0, 0.103);*/
-    box-shadow: 5px 5px#0ff;
+    /*background-color: rgb(241, 241, 241);*/
+    border: 10px solid transparent;
+    box-sizing: border-box;
+     background-image:linear-gradient(white, white),linear-gradient(270deg, #00D7B9, #B95DD7 50%, #FFB367 100%);
+     background-repeat: no-repeat;
+      background-origin: padding-box, border-box;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.103);
     border-radius: 4px;
     margin: 0 20px;
     padding: 40px 20px;
 }
-
+.dev:hover{
+    
+}
 .dev img{
     height: 100px;
     border-radius: 100px;
     margin-bottom: 10px;
 }
+.dev a{
+    text-decoration: none;
+}
 .dev p{
     font-size: 12px;
-    margin: 15px 0;
+    margin: 15px 0 30px;
 }
 .dev h3{
     color: #69ccd2;
@@ -385,6 +166,7 @@ main{
 .dev h4{
     color: #6c56a1;
 }
+
 .tituloDoAlbum{
     width: 100%;
     height: 80px;
